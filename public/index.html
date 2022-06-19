@@ -4,9 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../src/css/main.css">
+    <title>Inventory App Js</title>
 </head>
 <body>
+    <div>
+        <!-- appbar -->
+        <div class="appbar">
+            <h4>
+                Inventory App using tailwind & Js
+            </h4>
+            <span >7</span>
+        </div>
+        <!-- appContent -->
+        <div class="container app-content">
+        <!-- categoryform -->
+        <section>
+            <!-- <button id="toggle-add-category" >Add new Category?</button> -->
+            <div class="category">
+                <h3>
+                    Add New Category
+                </h3>
+                <form class="category-form">
+                    <div class="category-title">
+                        <label for="category-title">Title</label>
+                        <input type="text" name="category-title" id="category-title-input">
+                    </div>
+                    <div class="category-description">
+                        <label for="category-description">Description</label>
+                        <textarea name="category-description" id="category-description-text" cols="30"></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <button id="cancel-btn">Cancel</button>
+                        <button id="add-category-btn">Add Category</button>
+                    </div>
+                </form>    
+            </div>
+        </section>
+        <!-- product form -->
+        <div class="product">
+            <h3>
+                Add New Product
+            </h3>
+            <div class="product-form">
+                <div class="product-title">
+                    <label for="product-title">Title</label>
+                    <input type="text" name="product-title" id="product-title-input">
+                </div>
+                <div class="product-quantity">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" name="product-quantity" id="product-quantity">
+                </div>
+                <div class="select-category">
+                    <label for="qategory">category</label>
+                    <select name="product-category" id="product-category">
+                        <option value="">select a category</option>
+                        <option value="backend">backend</option>
+                        <option value="frontend">frontend</option>
+                    </select>
+                </div>
+                <div class="new-product-btn">
+                    <button id="add-new-product">Add new Product</button>
+                </div>
+            </div>
+        </div>
+        <!-- product list -->
+        <section class="section-product-list">
+            <div class="product-list">
+                <h3>Product list</h3>
+                <div class="search-product">
+                    <label for="search"> search</label>
+                    <input type="text" id="search-product" name="search-product">
+                </div>
+                <div class="sort-product">
+                    <label for="sort">sort</label>
+                    <select name="sort-product" id="sort-product">
+                        <option value="">select a option</option>
+                        <option value="newest" selected>newest</option>
+                        <option value="oldest">oldest</option>
+                    </select>
+                </div>
+                <div class="list-products">
+                    <span >css</span>
+                    <div>
+                        <span>Date</span>
+                        <span class="selectedcategory-title">frontend</span>
+                        <span class="quantity-product">4</span>
+                        <button id="delete-product">delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </div>
+        
+    </div>
     
+    
+ 
+    <script src="../src/js/app.js" type="module"></script>
 </body>
 </html>
