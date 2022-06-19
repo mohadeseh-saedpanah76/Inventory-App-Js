@@ -52,7 +52,7 @@ body{
 .category-form{
     width: 90vw;
     max-width:600px ;
-    height: 280px;
+    height: auto;
     background: #508157;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,7 @@ body{
 }
 .category-form .category-title #category-title-input{
     background: transparent;
+    color: #96f0d6;
     border: #96f0d6 solid 1px;
     border-radius: 15px;
     margin-top: 10px;
@@ -86,10 +87,13 @@ body{
     background: transparent;
     height: 70px;
     border: #96f0d6 solid 1px;
+    color: #96f0d6;
     border-radius: 20px;
     margin-top: 10px;
     outline: none;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
+    padding-top: 3px;
+    
 }
 .category-form .form-buttons{
     display: flex;
@@ -172,6 +176,7 @@ body{
     height: 40px;
     outline: none;
     padding-left: 1rem;
+    color: #96f0d6;
 }
 .product-form .product-quantity #product-quantity{
     background: transparent;
@@ -182,6 +187,7 @@ body{
     height: 40px;
     outline: none;
     padding-left: 1rem;
+    color: #96f0d6;
 }
 .product-form .select-category #product-category{
     background: transparent;
