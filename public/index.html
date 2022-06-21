@@ -12,16 +12,19 @@
         <!-- appbar -->
         <div class="appbar">
             <h4>
-                Inventory App using tailwind & Js
+                Inventory App Js
             </h4>
-            <span >7</span>
+            <div class="appbar-product-number"> 
+            </div>
         </div>
         <!-- appContent -->
         <div class="container app-content">
         <!-- categoryform -->
         <section>
-            <!-- <button id="toggle-add-category" >Add new Category?</button> -->
-            <div class="category">
+                <div class="toggle-add-category">
+                    <button id="toggle-add-category" >Add new Category?</button>
+                </div>
+                <div class="category hidden" id="category-wrapper">
                 <h3>
                     Add New Category
                 </h3>
@@ -82,13 +85,6 @@
                     </select>
                 </div>
                 <div class="list-products">
-                    <span >css</span>
-                    <div>
-                        <span>Date</span>
-                        <span class="selectedcategory-title">frontend</span>
-                        <span class="quantity-product">4</span>
-                        <button id="delete-product">delete</button>
-                    </div>
                 </div>
             </div>
         </section>
